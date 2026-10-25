@@ -1,0 +1,201 @@
+import { unsplash } from "@/lib/utils";
+import type { Adventure } from "@/types";
+
+/**
+ * Sample adventures — replace with the company's real offerings.
+ * `price` values are PLACEHOLDERS, not real quotes. Set `price: null` to show "Contact for pricing".
+ */
+export const adventures: Adventure[] = [
+  {
+    slug: "mountain-trekking",
+    title: "Mountain Trekking",
+    category: "Trekking",
+    featured: true,
+    tagline: "Climb through pine forest to high meadows and big mountain views.",
+    overview:
+      "A sample trek that follows a classic mountain trail, finishing with sweeping views of snow-covered peaks.",
+    description: [
+      "This sample trekking adventure is designed around steady uphill walking, rewarding viewpoints and evenings spent in a quiet mountain setting.",
+      "Trail length, altitude, accommodation and logistics depend on the final itinerary. Replace this text with the real trip details once confirmed.",
+    ],
+    location: "Fairy Meadows, Gilgit-Baltistan",
+    destinationSlug: "fairy-meadows",
+    duration: "3 days",
+    durationBucket: "2–3 days",
+    difficulty: "Challenging",
+    price: "From PKR 00,000 (placeholder)",
+    image: { src: unsplash("1464822759023-fed622ff2c3b", 1600), alt: "Snow-covered mountain peaks at sunrise" },
+    highlights: ["Forest and meadow trail", "Panoramic peak views", "Sunrise viewpoint", "Evening around the camp"],
+    itinerary: [
+      { title: "Day 1 — Trailhead & ascent", description: "Meet the group, get a briefing on the route and begin the climb through forest." },
+      { title: "Day 2 — Meadow & viewpoint", description: "Explore the high meadow and hike to a viewpoint for panoramic scenery." },
+      { title: "Day 3 — Descent & farewell", description: "Descend the trail, regroup and share the highlights of the journey." },
+    ],
+    included: ["Sample: trail briefing", "Sample: group coordination", "Sample: itinerary planning"],
+    notIncluded: ["Personal gear", "Personal expenses", "Travel insurance"],
+    whatToBring: ["Broken-in trekking boots", "Layered clothing", "Rain jacket", "Daypack", "Refillable water bottle", "Sun protection"],
+    faqs: [
+      { question: "Do I need prior trekking experience?", answer: "This sample trip is rated Challenging. Good fitness helps; confirm the requirements with the company for the actual trip." },
+      { question: "What is the weather like?", answer: "Mountain weather changes quickly. Final seasonal advice depends on the confirmed dates." },
+    ],
+  },
+  {
+    slug: "camping-under-the-stars",
+    title: "Camping Under the Stars",
+    category: "Camping",
+    featured: true,
+    tagline: "Pitch a tent beside a mountain lake and wait for the Milky Way.",
+    overview: "A relaxed overnight camping experience built around open skies, campfire evenings and quiet mornings.",
+    description: [
+      "Designed for people who want to switch off: set up camp, share a meal and watch the sky come alive after dark.",
+      "Camp location, gear provided and food arrangements depend on the real trip. Replace this placeholder copy with confirmed details.",
+    ],
+    location: "Skardu, Gilgit-Baltistan",
+    destinationSlug: "skardu",
+    duration: "2 days",
+    durationBucket: "2–3 days",
+    difficulty: "Easy",
+    price: "From PKR 00,000 (placeholder)",
+    image: { src: unsplash("1519681393784-d120267933ba", 1600), alt: "Starry night sky above mountain silhouettes" },
+    highlights: ["Lakeside campsite", "Stargazing session", "Campfire evening", "Sunrise coffee"],
+    itinerary: [
+      { title: "Day 1 — Arrive & set up camp", description: "Travel to the campsite, pitch tents and enjoy an evening under the stars." },
+      { title: "Day 2 — Sunrise & pack up", description: "Wake up to first light, enjoy a slow morning, then pack up and depart." },
+    ],
+    included: ["Sample: campsite selection", "Sample: group coordination"],
+    notIncluded: ["Sleeping bag (unless confirmed)", "Personal expenses", "Travel insurance"],
+    whatToBring: ["Warm sleeping layers", "Headlamp or torch", "Warm jacket", "Toiletries", "Power bank", "Reusable bottle"],
+    faqs: [
+      { question: "Are tents provided?", answer: "That depends on the final trip arrangement. Please confirm with the company when you inquire." },
+      { question: "Is this suitable for beginners?", answer: "This sample trip is rated Easy and is intended to be beginner-friendly." },
+    ],
+  },
+  {
+    slug: "hiking-nature-trails",
+    title: "Hiking & Nature Trails",
+    category: "Hiking",
+    featured: true,
+    tagline: "Easy-going forest and valley trails for every pace.",
+    overview: "A day of walking through green hills and forest, with plenty of time to stop, look and breathe.",
+    description: [
+      "A flexible day-hiking sample suited to beginners, friends and families who want fresh air without a big commitment.",
+      "Trail choices and timings will depend on the season and the actual trip plan.",
+    ],
+    location: "Swat Valley, Khyber Pakhtunkhwa",
+    destinationSlug: "swat-valley",
+    duration: "1 day",
+    durationBucket: "Day trip",
+    difficulty: "Easy",
+    price: "From PKR 00,000 (placeholder)",
+    image: { src: unsplash("1551632811-561732d1e306", 1600), alt: "Hiker walking along a forest trail" },
+    highlights: ["Forest trail walking", "Riverside rest stop", "Photo viewpoints", "Beginner friendly"],
+    itinerary: [
+      { title: "Morning — Trailhead", description: "Meet the group and set off along a gentle trail." },
+      { title: "Midday — Rest stop", description: "Pause at a scenic spot for lunch and photos." },
+      { title: "Afternoon — Return", description: "Walk back at an easy pace and wrap up the day." },
+    ],
+    included: ["Sample: route planning", "Sample: group coordination"],
+    notIncluded: ["Meals (unless confirmed)", "Personal expenses"],
+    whatToBring: ["Comfortable walking shoes", "Water", "Snacks", "Light rain layer", "Sunscreen", "Small daypack"],
+    faqs: [
+      { question: "Can kids join?", answer: "Families are often welcome on easier trips, but age limits depend on the actual trip. Please ask when you inquire." },
+    ],
+  },
+  {
+    slug: "waterfall-exploration",
+    title: "Waterfall Exploration",
+    category: "Waterfalls",
+    featured: true,
+    tagline: "Follow glacial streams to thundering falls.",
+    overview: "A scenic outing that follows mountain streams to a series of waterfalls and cool, misty viewpoints.",
+    description: [
+      "Combines moderate walking with time to rest beside moving water, ideal for photographers and nature lovers.",
+      "Terrain and water levels vary by season. Details here are sample content to be replaced.",
+    ],
+    location: "Naran & Kaghan, Khyber Pakhtunkhwa",
+    destinationSlug: "naran-kaghan",
+    duration: "2 days",
+    durationBucket: "2–3 days",
+    difficulty: "Moderate",
+    price: null,
+    image: { src: unsplash("1432405972618-c60b0225b8f9", 1600), alt: "Waterfall cascading over rocks in a forest" },
+    highlights: ["Multiple waterfall stops", "Stream-side walking", "Cool mountain air", "Photography time"],
+    itinerary: [
+      { title: "Day 1 — Valley & first falls", description: "Travel into the valley and walk to the first waterfall." },
+      { title: "Day 2 — Higher falls", description: "Explore further trails to higher viewpoints before heading back." },
+    ],
+    included: ["Sample: route planning", "Sample: group coordination"],
+    notIncluded: ["Accommodation (unless confirmed)", "Personal expenses", "Travel insurance"],
+    whatToBring: ["Shoes with good grip", "Waterproof layer", "Dry bag for electronics", "Quick-dry clothing", "Water bottle", "Towel"],
+    faqs: [
+      { question: "Can we swim?", answer: "Mountain water is cold and fast. Follow the guidance given for the actual trip and never enter water you are unsure about." },
+    ],
+  },
+  {
+    slug: "scenic-road-trips",
+    title: "Scenic Road Trips",
+    category: "Road Trips",
+    featured: true,
+    tagline: "Winding mountain roads, roadside views and no rush.",
+    overview: "A journey-focused trip where the drive itself is the adventure, with frequent stops at viewpoints and villages.",
+    description: [
+      "Built around the road: slow travel, scenic stops and time to explore local places along the way.",
+      "Route, vehicle type and stops are placeholders to be replaced with real arrangements.",
+    ],
+    location: "Hunza Valley, Gilgit-Baltistan",
+    destinationSlug: "hunza-valley",
+    duration: "5 days",
+    durationBucket: "4+ days",
+    difficulty: "Easy",
+    price: "From PKR 00,000 (placeholder)",
+    image: { src: unsplash("1500530855697-b586d89ba3ee", 1600), alt: "Road winding through red rock mountains" },
+    highlights: ["Scenic driving route", "Viewpoint stops", "Village visits", "Flexible pace"],
+    itinerary: [
+      { title: "Day 1 — Departure", description: "Begin the journey and settle in for the first leg of the drive." },
+      { title: "Days 2–4 — Valley exploration", description: "Visit viewpoints, forts and villages along the route." },
+      { title: "Day 5 — Return", description: "Head home with a head full of views." },
+    ],
+    included: ["Sample: route planning", "Sample: stop suggestions"],
+    notIncluded: ["Fuel and tolls (unless confirmed)", "Meals", "Personal expenses"],
+    whatToBring: ["Travel documents", "Layered clothing", "Motion-sickness remedies", "Camera", "Power bank", "Snacks"],
+    faqs: [
+      { question: "Is the route open all year?", answer: "Mountain roads can close for weather. Final seasonal advice depends on the confirmed trip." },
+    ],
+  },
+  {
+    slug: "group-adventure-tours",
+    title: "Group Adventure Tours",
+    category: "Group Tours",
+    featured: true,
+    tagline: "Shared journeys for friends, families and teams.",
+    overview: "A flexible group package sample for friends, families, schools or corporate teams who want to explore together.",
+    description: [
+      "Group tours can be adapted to size, interests and pace, mixing easy activities with shared experiences.",
+      "Please contact the company for real group arrangements; this page is sample content.",
+    ],
+    location: "Neelum Valley, Azad Kashmir",
+    destinationSlug: "neelum-valley",
+    duration: "4 days",
+    durationBucket: "4+ days",
+    difficulty: "Moderate",
+    price: null,
+    image: { src: unsplash("1511497584788-876760111969", 1600), alt: "Pine forest and mountains at sunset" },
+    highlights: ["Tailored to group size", "Team-friendly activities", "Shared campfire evenings", "For families and corporate groups"],
+    itinerary: [
+      { title: "Day 1 — Meet & travel", description: "Gather the group and travel to the valley." },
+      { title: "Days 2–3 — Explore together", description: "Light hikes, scenic stops and group activities." },
+      { title: "Day 4 — Wrap up", description: "Share stories and head home." },
+    ],
+    included: ["Sample: group planning", "Sample: activity coordination"],
+    notIncluded: ["Personal expenses", "Travel insurance", "Anything not confirmed in writing"],
+    whatToBring: ["Comfortable clothing", "Walking shoes", "Personal medication", "Reusable bottle", "Camera", "A good attitude"],
+    faqs: [
+      { question: "What is the minimum group size?", answer: "That depends on the trip. Contact the company with your group size and preferences." },
+    ],
+  },
+];
+
+export const getAdventure = (slug: string) => adventures.find((a) => a.slug === slug);
+export const categories = Array.from(new Set(adventures.map((a) => a.category)));
+export const difficulties = ["Easy", "Moderate", "Challenging"] as const;
+export const durationBuckets = ["Day trip", "2–3 days", "4+ days"] as const;

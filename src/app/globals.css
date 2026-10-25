@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --color-forest: #153d2b;
+  --color-forest-700: #1d5039;
+  --color-forest-950: #0d2619;
+  --color-charcoal: #17211c;
+  --color-orange: #f28c28;
+  --color-orange-600: #9a4507; /* AA-safe orange for text on light backgrounds */
+  --color-cream: #f8f7f2;
+  --color-sage: #e8eee7;
+  --color-sage-300: #c9d6c8;
+  --color-grey: #646c66; /* slightly darker than #737B75 to meet AA for text */
+  /* Darker grey for body-size secondary text (meets 4.5:1 on cream/white) */
+  --color-muted: #5a625c;
+
+  --font-heading: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-card: 0.875rem;
+}
+
+@layer base {
+  html {
+    scroll-padding-top: 5rem;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+  body {
+    background: var(--color-cream);
+    color: var(--color-charcoal);
+    font-family: var(--font-sans);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+    line-height: 1.12;
+    font-weight: 800;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-orange);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+  ::selection {
+    background: var(--color-orange);
+    color: var(--color-charcoal);
+  }
+}
+
+@layer utilities {
+  .eyebrow {
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+  .scrollbar-none {
+    scrollbar-width: none;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+}
